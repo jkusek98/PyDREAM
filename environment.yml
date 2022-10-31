@@ -1,0 +1,9 @@
+name: ci-env
+channels:
+  - conda-forge
+dependencies:
+  - numpy 
+  - scipy 
+  - nose 
+  - cython 
+  - pysb
