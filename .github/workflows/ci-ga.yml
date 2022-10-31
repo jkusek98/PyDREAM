@@ -23,6 +23,8 @@ jobs:
       run: |
         conda create -y -q -n ci-environment -c conda-forge -c alubbock python=${{ matrix.python-version }} numpy scipy nose cython pysb
         conda init bash
+    - name: Activate conda
+      run: |
         conda activate ci-environment
         python -m pip install .
     - name: Test with pytest
