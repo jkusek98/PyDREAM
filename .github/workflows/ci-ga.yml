@@ -17,12 +17,11 @@ jobs:
         activate-environment: ci-env
         environment-file: environment.yml
         python-version: ${{ matrix.python-version }}
-        auto-activate-base: false
+        auto-activate-base: true
     - name: Install dependencies conda
       run: |
         conda info
         conda list
-        conda activate ci-env
         python -m pip install .
     - name: Test with pytest
       run: |
