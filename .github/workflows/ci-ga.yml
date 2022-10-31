@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.7", "3.8", "3.9"]
+        python-version: ["3.7"]
 
     steps:
     - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda create -q -n ci-environment -c conda-forge -c alubbock python=${{ matrix.python-version }} numpy scipy nose cython pysb
+        conda create -y -q -n ci-environment -c conda-forge -c alubbock python=${{ matrix.python-version }} numpy scipy nose cython pysb
         conda init bash
         conda activate ci-environment
         python -m pip install .
