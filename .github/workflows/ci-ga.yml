@@ -26,4 +26,4 @@ jobs:
         python -m pip install .
     - name: Test with pytest
       run: |
-        nosetests
+        nosetests -v
