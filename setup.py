@@ -13,7 +13,10 @@ setup(name='pydream',
       author='Erin Shockley',
       author_email='erin.shockley@vanderbilt.edu',
       packages=['pydream'],
-      install_requires=['numpy', 'scipy'],
+      install_requires=[
+        'numpy==1.23.5', 
+        'scipy==1.9.3'
+        ],
       zip_safe=False,
       test_suite='nose.collector',
       tests_require=['nose'],
