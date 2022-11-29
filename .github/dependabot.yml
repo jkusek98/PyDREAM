@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "daily"
       time: "00:00"
-      timezone: "PT"
+      timezone: "America/Los_Angeles"
     pull-request-branch-name:
       separator: "-"
     labels:
