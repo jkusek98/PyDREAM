@@ -15,7 +15,7 @@ setup(name='pydream',
       packages=['pydream'],
       install_requires=[
         'numpy==1.23.5', 
-        'scipy==1.9.3'
+        'scipy==1.9.1'
         ],
       zip_safe=False,
       test_suite='nose.collector',
