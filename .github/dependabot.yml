@@ -4,8 +4,8 @@ updates:
     directory: "/" 
     schedule:
       interval: "daily"
-      time: "09:00"
-      timezone: "PDT"
+      time: "15:00"
+      timezone: "CET"
     pull-request-branch-name:
       separator: "-"
     labels:
