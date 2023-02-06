@@ -14,7 +14,7 @@ setup(name='pydream',
       author_email='erin.shockley@vanderbilt.edu',
       packages=['pydream'],
       install_requires=[
-        'numpy==1.23.5', 
+        'numpy==1.24.2', 
         'scipy==1.9.1'
         ],
       zip_safe=False,
